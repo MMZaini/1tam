@@ -10,7 +10,6 @@ import tkinter as tk
 print("Let's play a game. I'm thinking of a number between 1 and 1 million. i will give you clues on how what the answer is (answer is not a decimal!)\n")
 ranum = random.randint(1,1000000)
 tries = 0
-print(ranum)
 
 # checks if answers are correct
 while True:
