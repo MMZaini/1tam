@@ -1,8 +1,6 @@
 # import modules
 import random
 import time
-import asyncio
-import tkinter as tk
 
 
 
@@ -10,6 +8,8 @@ import tkinter as tk
 print("Let's play a game. I'm thinking of a number between 1 and 1 million. i will give you clues on how what the answer is (answer is not a decimal!)\n")
 ranum = random.randint(1,1000000)
 tries = 0
+
+# print(ranum)
 
 # checks if answers are correct
 while True:
@@ -30,20 +30,10 @@ f = open("scores.txt", "a")
 f.write(f"It took you {tries} tries and the correct answer was {ranum}\n")
 f.close()
 # asks to see scores and prints it
-sees = input("Would you like to see your previous scores? yes or no\n")
-if sees == "yes":        
+vs = input("Would you like to see your previous scores? yes or no\n")
+if vs == "yes":        
     f = open("scores.txt", "r")
     print(f.read())
-
-else:
-    print("ok")
-
-time.sleep(120)
-print("poo")
-    
-# loops program
-loop = asyncio.get_event_loop()
-try:
-    loop.run_forever()
-finally:
-    loop.close()
+input("Press enter 3x to exit program")
+input("Press enter 2x to exit program")
+input("Press enter 1x to exit program")
